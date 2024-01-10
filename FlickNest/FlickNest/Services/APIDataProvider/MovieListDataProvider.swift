@@ -35,7 +35,3 @@ class MovieListDataProvider {
   }
 }
 
-
-struct MovieListModel: Decodable, Hashable {
-  
-}
