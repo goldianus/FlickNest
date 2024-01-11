@@ -13,7 +13,7 @@ import Combine
 class MovieListViewModel : ObservableObject {
   //MARK: - Properties
   
-  @Published var arrMovieList: [Result] = []
+  @Published var arrMovieList: [ResultDataProvider] = []
   @Published var isLoading = false
   
   var totalPages = 0
