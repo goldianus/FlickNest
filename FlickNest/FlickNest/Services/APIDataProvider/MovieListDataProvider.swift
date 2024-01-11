@@ -11,8 +11,7 @@ import Combine
 // MARK: - MovieListDataProvider
 
 class MovieListDataProvider {
-  
-  private var cancellables = Set<AnyCancellable>()
+  private var subscriptions = Set<AnyCancellable>()
   private let networkManager = NetworkManager()
   var arrMovieListData = PassthroughSubject<MovieListModel, Never>()
   
@@ -20,7 +19,6 @@ class MovieListDataProvider {
     let url = NetworkURL.getMovieList(apiKey: apiKey, pageCount: pageCount).url
     let model = NetworkModel(url: url, method: .get)
     networkManager.callAPI(with: model)
-    
       .sink(receiveCompletion: { completion in
         switch completion {
         case .finished:
@@ -31,7 +29,7 @@ class MovieListDataProvider {
       }, receiveValue: { movieList in
         
         self.arrMovieListData.send(movieList)
-      }).store(in: &self.cancellables)
+      }).store(in: &self.subscriptions)
   }
 }
 

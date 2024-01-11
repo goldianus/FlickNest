@@ -15,8 +15,8 @@ enum NetworkURL {
 }
 
 extension NetworkURL {
-  var url: URL?{
-    switch self{
+  var url: URL? {
+    switch self {
     case .getMovieList(let apiKey, let pageCount):
       let endPointPath = "\(URLEndPoint.NowPlaying)\(apiKey)&page=\(pageCount)"
       return URL(string: NetworkURL.baseURLString + endPointPath)
@@ -39,6 +39,6 @@ extension NetworkURL {
   }
   
   static var baseURLString: String {
-    return  NetworkURL.baseURL?.absoluteString ?? ""
+    return NetworkURL.baseURL?.absoluteString ?? ""
   }
 }

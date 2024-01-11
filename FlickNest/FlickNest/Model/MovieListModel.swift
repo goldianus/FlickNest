@@ -11,7 +11,7 @@ import Foundation
 struct MovieListModel: Codable {
   var dates: Dates
   var page: Int
-  var results: [Result]
+  var results: [ResultDataProvider]
   var totalPages, totalResults: Int
   
   enum CodingKeys: String, CodingKey {
@@ -27,7 +27,7 @@ struct Dates: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct ResultDataProvider: Codable {
   var adult: Bool
   var backdropPath: String
   var genreIDS: [Int]

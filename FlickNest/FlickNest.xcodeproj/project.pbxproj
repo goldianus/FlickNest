@@ -19,6 +19,14 @@
 		1B4E9D542B4E33BD00F9E77B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D532B4E33BD00F9E77B /* NetworkManager.swift */; };
 		1B4E9D562B4E392800F9E77B /* MovieListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D552B4E392800F9E77B /* MovieListDataProvider.swift */; };
 		1B4E9D5D2B4E62B800F9E77B /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D5C2B4E62B800F9E77B /* MovieListModel.swift */; };
+		1B4E9D602B4E885100F9E77B /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D5F2B4E885100F9E77B /* MovieListViewModel.swift */; };
+		1B4E9D632B4F859400F9E77B /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D622B4F859400F9E77B /* MovieList.swift */; };
+		1B4E9D652B4F877300F9E77B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D642B4F877300F9E77B /* LoadingView.swift */; };
+		1B4E9D672B4F891A00F9E77B /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D662B4F891A00F9E77B /* MovieListCell.swift */; };
+		1B4E9D6A2B4F89ED00F9E77B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1B4E9D692B4F89ED00F9E77B /* SDWebImageSwiftUI */; };
+		1B4E9D6C2B4FC16200F9E77B /* CustomSDWebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D6B2B4FC16200F9E77B /* CustomSDWebImageView.swift */; };
+		1B4E9D6E2B4FC43100F9E77B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D6D2B4FC43100F9E77B /* SplashView.swift */; };
+		1B4E9D782B4FCD1C00F9E77B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D772B4FCD1C00F9E77B /* UIFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,18 @@
 		1B4E9D532B4E33BD00F9E77B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1B4E9D552B4E392800F9E77B /* MovieListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDataProvider.swift; sourceTree = "<group>"; };
 		1B4E9D5C2B4E62B800F9E77B /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
+		1B4E9D5F2B4E885100F9E77B /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		1B4E9D622B4F859400F9E77B /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		1B4E9D642B4F877300F9E77B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1B4E9D662B4F891A00F9E77B /* MovieListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
+		1B4E9D6B2B4FC16200F9E77B /* CustomSDWebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSDWebImageView.swift; sourceTree = "<group>"; };
+		1B4E9D6D2B4FC43100F9E77B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		1B4E9D712B4FCB1F00F9E77B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		1B4E9D722B4FCB2E00F9E77B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		1B4E9D732B4FCB4D00F9E77B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		1B4E9D742B4FCB7100F9E77B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		1B4E9D752B4FCB7D00F9E77B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		1B4E9D772B4FCD1C00F9E77B /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4E9D6A2B4F89ED00F9E77B /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +127,10 @@
 		1B3FC54A2B4D221E00170398 /* FlickNest */ = {
 			isa = PBXGroup;
 			children = (
+				1B4E9D762B4FCD0E00F9E77B /* Utils */,
+				1B4E9D702B4FCB0600F9E77B /* font */,
+				1B4E9D612B4F855500F9E77B /* View */,
+				1B4E9D5E2B4E884000F9E77B /* ViewModel */,
 				1B4E9D5B2B4E629F00F9E77B /* Model */,
 				1B3FC58F2B4D257700170398 /* Services */,
 				1B3FC54B2B4D221E00170398 /* FlickNestApp.swift */,
@@ -192,6 +217,54 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1B4E9D5E2B4E884000F9E77B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B4E9D5F2B4E885100F9E77B /* MovieListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1B4E9D612B4F855500F9E77B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B4E9D6F2B4FC92B00F9E77B /* Cell */,
+				1B4E9D622B4F859400F9E77B /* MovieList.swift */,
+				1B4E9D642B4F877300F9E77B /* LoadingView.swift */,
+				1B4E9D662B4F891A00F9E77B /* MovieListCell.swift */,
+				1B4E9D6B2B4FC16200F9E77B /* CustomSDWebImageView.swift */,
+				1B4E9D6D2B4FC43100F9E77B /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B4E9D6F2B4FC92B00F9E77B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B4E9D702B4FCB0600F9E77B /* font */ = {
+			isa = PBXGroup;
+			children = (
+				1B4E9D712B4FCB1F00F9E77B /* Roboto-Regular.ttf */,
+				1B4E9D722B4FCB2E00F9E77B /* Roboto-Medium.ttf */,
+				1B4E9D732B4FCB4D00F9E77B /* Roboto-Bold.ttf */,
+				1B4E9D742B4FCB7100F9E77B /* Roboto-Black.ttf */,
+				1B4E9D752B4FCB7D00F9E77B /* Roboto-Thin.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		1B4E9D762B4FCD0E00F9E77B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1B4E9D772B4FCD1C00F9E77B /* UIFont.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +281,9 @@
 			dependencies = (
 			);
 			name = FlickNest;
+			packageProductDependencies = (
+				1B4E9D692B4F89ED00F9E77B /* SDWebImageSwiftUI */,
+			);
 			productName = FlickNest;
 			productReference = 1B3FC5482B4D221E00170398 /* FlickNest.app */;
 			productType = "com.apple.product-type.application";
@@ -280,6 +356,9 @@
 				Base,
 			);
 			mainGroup = 1B3FC53F2B4D221E00170398;
+			packageReferences = (
+				1B4E9D682B4F89ED00F9E77B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 1B3FC5492B4D221E00170398 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,13 +401,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4E9D672B4F891A00F9E77B /* MovieListCell.swift in Sources */,
+				1B4E9D632B4F859400F9E77B /* MovieList.swift in Sources */,
 				1B3FC5972B4D306B00170398 /* URLEndPoint.swift in Sources */,
 				1B3FC5952B4D2B6900170398 /* NetworkURL.swift in Sources */,
+				1B4E9D652B4F877300F9E77B /* LoadingView.swift in Sources */,
 				1B4E9D542B4E33BD00F9E77B /* NetworkManager.swift in Sources */,
+				1B4E9D602B4E885100F9E77B /* MovieListViewModel.swift in Sources */,
 				1B3FC54E2B4D221E00170398 /* ContentView.swift in Sources */,
+				1B4E9D6E2B4FC43100F9E77B /* SplashView.swift in Sources */,
 				1B4E9D5D2B4E62B800F9E77B /* MovieListModel.swift in Sources */,
+				1B4E9D782B4FCD1C00F9E77B /* UIFont.swift in Sources */,
 				1B3FC54C2B4D221E00170398 /* FlickNestApp.swift in Sources */,
 				1B4E9D562B4E392800F9E77B /* MovieListDataProvider.swift in Sources */,
+				1B4E9D6C2B4FC16200F9E77B /* CustomSDWebImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B4E9D682B4F89ED00F9E77B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B4E9D692B4F89ED00F9E77B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B4E9D682B4F89ED00F9E77B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B3FC5402B4D221E00170398 /* Project object */;
 }
