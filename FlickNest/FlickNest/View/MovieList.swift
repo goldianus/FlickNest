@@ -39,7 +39,6 @@ struct MovieList: View {
         .padding(.all, 10)
       }
       .refreshable{
-        
         viewModel.getResetPageNTotalCount()
         viewModel.getMovieList(true)
       }
