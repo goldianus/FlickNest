@@ -28,6 +28,7 @@ struct MainBanner: View {
               startTimer()
             }
         }
+        .edgesIgnoringSafeArea(.all)
       }
     }
   

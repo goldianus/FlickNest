@@ -33,6 +33,9 @@
 		1B90882A2B525BDC001C61F5 /* HomeBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088292B525BDC001C61F5 /* HomeBannerModel.swift */; };
 		1B90882C2B526095001C61F5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90882B2B526095001C61F5 /* HomeScreen.swift */; };
 		1B90882E2B52613E001C61F5 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90882D2B52613E001C61F5 /* PagingView.swift */; };
+		1B9088302B528708001C61F5 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90882F2B528708001C61F5 /* ButtonStyle.swift */; };
+		1B9088322B5291FC001C61F5 /* MovieCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088312B5291FC001C61F5 /* MovieCarouselView.swift */; };
+		1B9088342B529290001C61F5 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088332B529290001C61F5 /* MovieCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		1B9088292B525BDC001C61F5 /* HomeBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerModel.swift; sourceTree = "<group>"; };
 		1B90882B2B526095001C61F5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		1B90882D2B52613E001C61F5 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		1B90882F2B528708001C61F5 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonStyle.swift; path = FlickNest/View/HomeScreen/ButtonStyle.swift; sourceTree = SOURCE_ROOT; };
+		1B9088312B5291FC001C61F5 /* MovieCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCarouselView.swift; sourceTree = "<group>"; };
+		1B9088332B529290001C61F5 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +282,7 @@
 		1B4E9D762B4FCD0E00F9E77B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1B90882F2B528708001C61F5 /* ButtonStyle.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -308,11 +315,21 @@
 		1B9088262B52380B001C61F5 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1B9088352B52A25B001C61F5 /* CellView */,
 				1B9088272B523828001C61F5 /* MainBanner.swift */,
 				1B90882B2B526095001C61F5 /* HomeScreen.swift */,
 				1B90882D2B52613E001C61F5 /* PagingView.swift */,
+				1B9088312B5291FC001C61F5 /* MovieCarouselView.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		1B9088352B52A25B001C61F5 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				1B9088332B529290001C61F5 /* MovieCard.swift */,
+			);
+			path = CellView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,8 +472,10 @@
 				1B4E9D672B4F891A00F9E77B /* MovieListCell.swift in Sources */,
 				1B4E9D632B4F859400F9E77B /* MovieList.swift in Sources */,
 				1B3FC5972B4D306B00170398 /* URLEndPoint.swift in Sources */,
+				1B9088342B529290001C61F5 /* MovieCard.swift in Sources */,
 				1B3FC5952B4D2B6900170398 /* NetworkURL.swift in Sources */,
 				1B4E9D652B4F877300F9E77B /* LoadingView.swift in Sources */,
+				1B9088302B528708001C61F5 /* ButtonStyle.swift in Sources */,
 				1B9088242B523493001C61F5 /* DefaultTheme.swift in Sources */,
 				1B4E9D542B4E33BD00F9E77B /* NetworkManager.swift in Sources */,
 				1B90882E2B52613E001C61F5 /* PagingView.swift in Sources */,
@@ -469,6 +488,7 @@
 				1B4E9D812B4FEDA300F9E77B /* TabView.swift in Sources */,
 				1B4E9D782B4FCD1C00F9E77B /* UIFont.swift in Sources */,
 				1B3FC54C2B4D221E00170398 /* FlickNestApp.swift in Sources */,
+				1B9088322B5291FC001C61F5 /* MovieCarouselView.swift in Sources */,
 				1B4E9D562B4E392800F9E77B /* MovieListDataProvider.swift in Sources */,
 				1B4E9D6C2B4FC16200F9E77B /* CustomSDWebImageView.swift in Sources */,
 			);

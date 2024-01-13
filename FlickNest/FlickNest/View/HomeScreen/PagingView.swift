@@ -61,7 +61,7 @@ struct PagingView<Content: View>: View {
       .clipped()
       
       DotPageIndicator(index: $index, maxIndex: maxIndex)
-        .padding(10)
+        .padding(5)
     }
   }
   
@@ -90,7 +90,7 @@ struct DotPageIndicator: View {
       ForEach(0...maxIndex, id: \.self) { pageIndex in
         Circle()
           .fill(pageIndex == self.index ? Color.blue : Color.white)
-          .frame(width: 10, height: 10)
+          .frame(width: 5, height: 5)
       }
     }
   }

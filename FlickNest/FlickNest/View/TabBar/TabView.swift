@@ -16,14 +16,14 @@ enum TabItem: Int {
 struct TabViewController: View {
   var body: some View {
     TabView {
-      NotesView()
+      HomeScreen()
         .tabItem {
           Label("Home", systemImage: "house.circle.fill")
         }
       
       NotesView()
         .tabItem {
-          Label("Notification", systemImage: "checkmark.message.fill")
+          Label("Notification", systemImage: "bell.circle.fill")
         }
       
       SplashView()
