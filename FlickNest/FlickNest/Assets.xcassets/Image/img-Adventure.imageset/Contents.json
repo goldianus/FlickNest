@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "img-Adventure.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
