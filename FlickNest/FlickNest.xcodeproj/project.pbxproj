@@ -36,6 +36,7 @@
 		1B9088302B528708001C61F5 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90882F2B528708001C61F5 /* ButtonStyle.swift */; };
 		1B9088322B5291FC001C61F5 /* MovieCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088312B5291FC001C61F5 /* MovieCarouselView.swift */; };
 		1B9088342B529290001C61F5 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088332B529290001C61F5 /* MovieCard.swift */; };
+		1B9088372B52D46C001C61F5 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088362B52D46C001C61F5 /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		1B90882F2B528708001C61F5 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonStyle.swift; path = FlickNest/View/HomeScreen/ButtonStyle.swift; sourceTree = SOURCE_ROOT; };
 		1B9088312B5291FC001C61F5 /* MovieCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCarouselView.swift; sourceTree = "<group>"; };
 		1B9088332B529290001C61F5 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
+		1B9088362B52D46C001C61F5 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Ext.swift"; path = "FlickNest/View/HomeScreen/Color+Ext.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				1B90882F2B528708001C61F5 /* ButtonStyle.swift */,
+				1B9088362B52D46C001C61F5 /* Color+Ext.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				1B4E9D632B4F859400F9E77B /* MovieList.swift in Sources */,
 				1B3FC5972B4D306B00170398 /* URLEndPoint.swift in Sources */,
 				1B9088342B529290001C61F5 /* MovieCard.swift in Sources */,
+				1B9088372B52D46C001C61F5 /* Color+Ext.swift in Sources */,
 				1B3FC5952B4D2B6900170398 /* NetworkURL.swift in Sources */,
 				1B4E9D652B4F877300F9E77B /* LoadingView.swift in Sources */,
 				1B9088302B528708001C61F5 /* ButtonStyle.swift in Sources */,

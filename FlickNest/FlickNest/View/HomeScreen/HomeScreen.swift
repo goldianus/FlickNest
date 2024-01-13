@@ -16,7 +16,8 @@ struct HomeScreen: View {
         VStack {
           ScrollView {
             MainBanner()
-              .frame(width: UIScreen.main.bounds.width, height: 300)
+              .frame(width: UIScreen.main.bounds.width, height: 350)
+              
             VStack(spacing: 4.0) {
               MovieCarouselView(title: "Popular Movies", btnSeeAll: "See All")
                 .padding(.top, 10)
