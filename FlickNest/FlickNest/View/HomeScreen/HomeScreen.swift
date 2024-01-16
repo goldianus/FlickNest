@@ -16,10 +16,6 @@ struct HomeScreen: View {
           ZStack {
             MainBanner()
               .frame(width: UIScreen.main.bounds.width, height: 350)
-
-//            HeaderView()
-//              .padding()
-             
           }
           
           VStack(spacing: 1.0) {
