@@ -38,6 +38,13 @@
 		1B9088342B529290001C61F5 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088332B529290001C61F5 /* MovieCard.swift */; };
 		1B9088372B52D46C001C61F5 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088362B52D46C001C61F5 /* Color+Ext.swift */; };
 		69A56AE32B6D205B00F0A020 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AE22B6D205B00F0A020 /* ApiService.swift */; };
+		69A56AE72B6D33CB00F0A020 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AE62B6D33CB00F0A020 /* Coordinator.swift */; };
+		69A56AE92B6D360B00F0A020 /* PopularListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AE82B6D360B00F0A020 /* PopularListAssembly.swift */; };
+		69A56AEF2B6D36D800F0A020 /* PopularListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AEE2B6D36D800F0A020 /* PopularListRepository.swift */; };
+		69A56AF12B6D379700F0A020 /* PopularListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AF02B6D379700F0A020 /* PopularListInteractor.swift */; };
+		69A56AF32B6D386800F0A020 /* PopularListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AF22B6D386800F0A020 /* PopularListPresenter.swift */; };
+		69A56AF52B6D3F6000F0A020 /* PopularListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AF42B6D3F6000F0A020 /* PopularListViewModel.swift */; };
+		69A56AF72B6D429000F0A020 /* PopularListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AF62B6D429000F0A020 /* PopularListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +103,13 @@
 		1B9088332B529290001C61F5 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
 		1B9088362B52D46C001C61F5 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Ext.swift"; path = "FlickNest/View/HomeScreen/Color+Ext.swift"; sourceTree = SOURCE_ROOT; };
 		69A56AE22B6D205B00F0A020 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		69A56AE62B6D33CB00F0A020 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		69A56AE82B6D360B00F0A020 /* PopularListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularListAssembly.swift; sourceTree = "<group>"; };
+		69A56AEE2B6D36D800F0A020 /* PopularListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularListRepository.swift; sourceTree = "<group>"; };
+		69A56AF02B6D379700F0A020 /* PopularListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularListInteractor.swift; sourceTree = "<group>"; };
+		69A56AF22B6D386800F0A020 /* PopularListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularListPresenter.swift; sourceTree = "<group>"; };
+		69A56AF42B6D3F6000F0A020 /* PopularListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularListViewModel.swift; sourceTree = "<group>"; };
+		69A56AF62B6D429000F0A020 /* PopularListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +355,7 @@
 		69A56ADF2B6D1F6000F0A020 /* CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				69A56AE42B6D33A400F0A020 /* Sceness */,
 				69A56AE02B6D200D00F0A020 /* Source */,
 			);
 			path = CleanArchitecture;
@@ -360,6 +375,60 @@
 				69A56AE22B6D205B00F0A020 /* ApiService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		69A56AE42B6D33A400F0A020 /* Sceness */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AEA2B6D368100F0A020 /* PopularList */,
+				69A56AE52B6D33B400F0A020 /* Cordinator */,
+			);
+			path = Sceness;
+			sourceTree = "<group>";
+		};
+		69A56AE52B6D33B400F0A020 /* Cordinator */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AE62B6D33CB00F0A020 /* Coordinator.swift */,
+				69A56AE82B6D360B00F0A020 /* PopularListAssembly.swift */,
+			);
+			path = Cordinator;
+			sourceTree = "<group>";
+		};
+		69A56AEA2B6D368100F0A020 /* PopularList */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AED2B6D36A800F0A020 /* Presentation */,
+				69A56AEC2B6D369E00F0A020 /* Domain */,
+				69A56AEB2B6D369400F0A020 /* Data */,
+			);
+			path = PopularList;
+			sourceTree = "<group>";
+		};
+		69A56AEB2B6D369400F0A020 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AEE2B6D36D800F0A020 /* PopularListRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		69A56AEC2B6D369E00F0A020 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AF02B6D379700F0A020 /* PopularListInteractor.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		69A56AED2B6D36A800F0A020 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AF22B6D386800F0A020 /* PopularListPresenter.swift */,
+				69A56AF42B6D3F6000F0A020 /* PopularListViewModel.swift */,
+				69A56AF62B6D429000F0A020 /* PopularListView.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +569,7 @@
 			files = (
 				1B9088282B523828001C61F5 /* MainBanner.swift in Sources */,
 				1B4E9D672B4F891A00F9E77B /* MovieListCell.swift in Sources */,
+				69A56AE72B6D33CB00F0A020 /* Coordinator.swift in Sources */,
 				1B4E9D632B4F859400F9E77B /* MovieList.swift in Sources */,
 				1B3FC5972B4D306B00170398 /* URLEndPoint.swift in Sources */,
 				1B9088342B529290001C61F5 /* MovieCard.swift in Sources */,
@@ -507,17 +577,23 @@
 				1B3FC5952B4D2B6900170398 /* NetworkURL.swift in Sources */,
 				1B4E9D652B4F877300F9E77B /* LoadingView.swift in Sources */,
 				1B9088302B528708001C61F5 /* ButtonStyle.swift in Sources */,
+				69A56AF72B6D429000F0A020 /* PopularListView.swift in Sources */,
+				69A56AF32B6D386800F0A020 /* PopularListPresenter.swift in Sources */,
 				1B9088242B523493001C61F5 /* DefaultTheme.swift in Sources */,
 				1B4E9D542B4E33BD00F9E77B /* NetworkManager.swift in Sources */,
+				69A56AF52B6D3F6000F0A020 /* PopularListViewModel.swift in Sources */,
 				1B90882E2B52613E001C61F5 /* PagingView.swift in Sources */,
 				1B4E9D602B4E885100F9E77B /* MovieListViewModel.swift in Sources */,
 				1B90882C2B526095001C61F5 /* HomeScreen.swift in Sources */,
 				1B3FC54E2B4D221E00170398 /* ContentView.swift in Sources */,
 				1B4E9D6E2B4FC43100F9E77B /* SplashView.swift in Sources */,
+				69A56AEF2B6D36D800F0A020 /* PopularListRepository.swift in Sources */,
+				69A56AE92B6D360B00F0A020 /* PopularListAssembly.swift in Sources */,
 				69A56AE32B6D205B00F0A020 /* ApiService.swift in Sources */,
 				1B4E9D5D2B4E62B800F9E77B /* MovieListModel.swift in Sources */,
 				1B90882A2B525BDC001C61F5 /* HomeBannerModel.swift in Sources */,
 				1B4E9D812B4FEDA300F9E77B /* TabView.swift in Sources */,
+				69A56AF12B6D379700F0A020 /* PopularListInteractor.swift in Sources */,
 				1B4E9D782B4FCD1C00F9E77B /* UIFont.swift in Sources */,
 				1B3FC54C2B4D221E00170398 /* FlickNestApp.swift in Sources */,
 				1B9088322B5291FC001C61F5 /* MovieCarouselView.swift in Sources */,
