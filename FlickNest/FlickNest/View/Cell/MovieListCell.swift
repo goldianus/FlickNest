@@ -27,7 +27,11 @@ struct MovieListCell: View {
   @ViewBuilder
   func MovieImageView() -> some View {
     let imgUrl = URL(string: "\(imagePath)" + "\(moviesData.posterPath )")
-    CustomSDWebImageView(imgURL: imgUrl, imgWidth: 80, imgHeight: 80, placeholderImage: "StringConstants.placeholderImageFilm", isCircle: false)
+    CustomSDWebImageView(imgURL: imgUrl, 
+                         imgWidth: 80,
+                         imgHeight: 80,
+                         placeholderImage: "StringConstants.placeholderImageFilm",
+                         isCircle: false)
   }
   
   @ViewBuilder

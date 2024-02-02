@@ -11,7 +11,8 @@ import SwiftUI
 struct FlickNestApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashView()
+          TabViewController()
+//            SplashView()
         }
     }
 }
