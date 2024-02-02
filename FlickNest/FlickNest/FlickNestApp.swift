@@ -12,7 +12,6 @@ struct FlickNestApp: App {
     var body: some Scene {
         WindowGroup {
           TabViewController()
-//            SplashView()
         }
     }
 }

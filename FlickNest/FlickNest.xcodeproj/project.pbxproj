@@ -37,6 +37,7 @@
 		1B9088322B5291FC001C61F5 /* MovieCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088312B5291FC001C61F5 /* MovieCarouselView.swift */; };
 		1B9088342B529290001C61F5 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088332B529290001C61F5 /* MovieCard.swift */; };
 		1B9088372B52D46C001C61F5 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088362B52D46C001C61F5 /* Color+Ext.swift */; };
+		69A56AE32B6D205B00F0A020 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A56AE22B6D205B00F0A020 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		1B9088312B5291FC001C61F5 /* MovieCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCarouselView.swift; sourceTree = "<group>"; };
 		1B9088332B529290001C61F5 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
 		1B9088362B52D46C001C61F5 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Ext.swift"; path = "FlickNest/View/HomeScreen/Color+Ext.swift"; sourceTree = SOURCE_ROOT; };
+		69A56AE22B6D205B00F0A020 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		1B3FC54A2B4D221E00170398 /* FlickNest */ = {
 			isa = PBXGroup;
 			children = (
+				69A56ADF2B6D1F6000F0A020 /* CleanArchitecture */,
 				1B9088222B523487001C61F5 /* Theming */,
 				1B4E9D762B4FCD0E00F9E77B /* Utils */,
 				1B4E9D702B4FCB0600F9E77B /* font */,
@@ -335,6 +338,30 @@
 			path = CellView;
 			sourceTree = "<group>";
 		};
+		69A56ADF2B6D1F6000F0A020 /* CleanArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AE02B6D200D00F0A020 /* Source */,
+			);
+			path = CleanArchitecture;
+			sourceTree = "<group>";
+		};
+		69A56AE02B6D200D00F0A020 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AE12B6D201B00F0A020 /* Networking */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		69A56AE12B6D201B00F0A020 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				69A56AE22B6D205B00F0A020 /* ApiService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -487,6 +514,7 @@
 				1B90882C2B526095001C61F5 /* HomeScreen.swift in Sources */,
 				1B3FC54E2B4D221E00170398 /* ContentView.swift in Sources */,
 				1B4E9D6E2B4FC43100F9E77B /* SplashView.swift in Sources */,
+				69A56AE32B6D205B00F0A020 /* ApiService.swift in Sources */,
 				1B4E9D5D2B4E62B800F9E77B /* MovieListModel.swift in Sources */,
 				1B90882A2B525BDC001C61F5 /* HomeBannerModel.swift in Sources */,
 				1B4E9D812B4FEDA300F9E77B /* TabView.swift in Sources */,

@@ -8,23 +8,23 @@
 import Foundation
 import Combine
 
-public typealias JSON = [String: Any]
-public typealias HTTPHeaders = [String: String]
-
-public enum HTTPMethod: String {
-  case get = "GET"
-  case head = "HEAD"
-  case post = "POST"
-  case put = "PUT"
-  case delete = "DELETE"
-  case connect = "CONNECT"
-}
-
-struct NetworkModel{
-  let url: URL?
-  let method: HTTPMethod
-  let body: JSON? = nil
-}
+//public typealias JSON = [String: Any]
+//public typealias HTTPHeaders = [String: String]
+//
+//public enum HTTPMethod: String {
+//  case get = "GET"
+//  case head = "HEAD"
+//  case post = "POST"
+//  case put = "PUT"
+//  case delete = "DELETE"
+//  case connect = "CONNECT"
+//}
+//
+//struct NetworkModel{
+//  let url: URL?
+//  let method: HTTPMethod
+//  let body: JSON? = nil
+//}
 
 // MARK: - NetworkManager
 class NetworkManager {
