@@ -18,25 +18,19 @@ struct PopularList: View {
   var body: some View {
     NavigationStack{
       ScrollView(.horizontal, showsIndicators: false) {
-        ForEach(viewModel.arrMovieList, id: \.id) { movies in
-          PopularCarouselView(popularData: movies)
-          if viewModel.pageCount <= viewModel.totalPages {
-            ProgressView(label: {
-              Text("Loading")
-            }).progressViewStyle(.circular)
-              .tint(.gray)
-              .onAppear(perform: {
-                viewModel.getPopularList()
-              })
+        HStack(alignment: .top, spacing: 4) {
+          ForEach(viewModel.arrMovieList, id: \.self.id) { movies in
+            PopularCarouselView(popularData: movies)
           }
         }
+        .padding(.leading, 16)
       }
       .refreshable{
         viewModel.getResetPageNTotalCount()
-        viewModel.getPopularList()
+        viewModel.getMovieList(true)
       }
       .onAppear(perform: {
-        viewModel.getPopularList()
+        viewModel.getMovieList(true)
       })
       .navigationTitle("Popular Movie")
     }

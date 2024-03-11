@@ -14,6 +14,7 @@ class MovieListViewModel : ObservableObject {
   //MARK: - Properties
   
   @Published var arrMovieList: [ResultDataProvider] = []
+  @Published var popularMovies: [ResultDataProvider] = []
   @Published var isLoading = false
   
   var totalPages = 0
@@ -26,6 +27,8 @@ class MovieListViewModel : ObservableObject {
   }
   
   // MARK: - Public Methods
+  
+  //MARK: - Load NowPlaying
   func getMovieList(_ showLoader: Bool) {
     if showLoader {
       self.isLoading = true
@@ -50,6 +53,7 @@ class MovieListViewModel : ObservableObject {
       .store(in: &cancellables)
   }
   
+  //MARK: - Load Popular
   func getPopularList() {
     movieListDataProvider.getPopularList(pageCount)
     movieListDataProvider.arrMovieListData
@@ -61,8 +65,9 @@ class MovieListViewModel : ObservableObject {
           print(err.localizedDescription)
           self.isLoading = false
         }
-      }, receiveValue: { movieList in
-        self.totalPages = movieList.totalPages
+      }, receiveValue: { popularList in
+        self.popularMovies.append(contentsOf: popularList.results)
+        self.totalPages = popularList.totalPages
         self.pageCount += 1
         self.isLoading = false
       })

@@ -14,10 +14,9 @@ struct PopularCarouselView: View {
     VStack(alignment: .center) {
       PopularImageView()
     }
-    .frame(width: 160, height: 280)
+    .frame(width: 200, height: 260)
     .background(.white)
     .cornerRadius(10)
-    .shadow(radius: 5)
     .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
   }
   
@@ -25,8 +24,8 @@ struct PopularCarouselView: View {
   func PopularImageView() -> some View {
     let imgUrl = URL(string: "\(imagePath)" + "\(popularData.posterPath )")
     CustomSDWebImageView(imgURL: imgUrl,
-                         imgWidth: 160,
-                         imgHeight: 280,
+                         imgWidth: 200,
+                         imgHeight: 260,
                          placeholderImage: "StringConstants.placeholderImageFilm",
                          isCircle: false)
   }
