@@ -12,6 +12,7 @@ enum NetworkURL {
   case getMovieList(apiKey: String, pageCount: Int)
   case getMovieDetails(movieId: String, apiKey: String)
   case getMovieSearch(apiKey: String,  query: String)
+  case getPopularList(apiKey: String, pageCount: Int)
 }
 
 extension NetworkURL {
@@ -25,6 +26,9 @@ extension NetworkURL {
       return URL(string: NetworkURL.baseURLString + endPointPath)
     case .getMovieSearch(let apiKey, let query):
       let endPointPath = "\(URLEndPoint.MovieSearch)\(apiKey)&query=\(query)"
+      return URL(string: NetworkURL.baseURLString + endPointPath)
+    case .getPopularList(apiKey: let apiKey, pageCount: let pageCount):
+      let endPointPath = "\(URLEndPoint.Popular)\(apiKey)&page=\(pageCount)"
       return URL(string: NetworkURL.baseURLString + endPointPath)
     }
   }

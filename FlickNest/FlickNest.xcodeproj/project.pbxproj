@@ -28,6 +28,9 @@
 		1B4E9D6E2B4FC43100F9E77B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D6D2B4FC43100F9E77B /* SplashView.swift */; };
 		1B4E9D782B4FCD1C00F9E77B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D772B4FCD1C00F9E77B /* UIFont.swift */; };
 		1B4E9D812B4FEDA300F9E77B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E9D802B4FEDA300F9E77B /* TabView.swift */; };
+		1B6A8E692B9ED98600EFBE5F /* PopularList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A8E682B9ED98600EFBE5F /* PopularList.swift */; };
+		1B6A8E6B2B9EDA8E00EFBE5F /* PopularCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A8E6A2B9EDA8E00EFBE5F /* PopularCarouselView.swift */; };
+		1B6A8E6F2B9EEA4300EFBE5F /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A8E6E2B9EEA4300EFBE5F /* PopularView.swift */; };
 		1B9088242B523493001C61F5 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088232B523493001C61F5 /* DefaultTheme.swift */; };
 		1B9088282B523828001C61F5 /* MainBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088272B523828001C61F5 /* MainBanner.swift */; };
 		1B90882A2B525BDC001C61F5 /* HomeBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9088292B525BDC001C61F5 /* HomeBannerModel.swift */; };
@@ -93,6 +96,9 @@
 		1B4E9D752B4FCB7D00F9E77B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		1B4E9D772B4FCD1C00F9E77B /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		1B4E9D802B4FEDA300F9E77B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		1B6A8E682B9ED98600EFBE5F /* PopularList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularList.swift; sourceTree = "<group>"; };
+		1B6A8E6A2B9EDA8E00EFBE5F /* PopularCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCarouselView.swift; sourceTree = "<group>"; };
+		1B6A8E6E2B9EEA4300EFBE5F /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
 		1B9088232B523493001C61F5 /* DefaultTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
 		1B9088272B523828001C61F5 /* MainBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBanner.swift; sourceTree = "<group>"; };
 		1B9088292B525BDC001C61F5 /* HomeBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerModel.swift; sourceTree = "<group>"; };
@@ -267,6 +273,7 @@
 		1B4E9D612B4F855500F9E77B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1B6A8E672B9ED95E00EFBE5F /* PopularList */,
 				1B9088262B52380B001C61F5 /* HomeScreen */,
 				1B4E9D7F2B4FECF300F9E77B /* TabBar */,
 				1B4E9D6F2B4FC92B00F9E77B /* Cell */,
@@ -315,6 +322,15 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		1B6A8E672B9ED95E00EFBE5F /* PopularList */ = {
+			isa = PBXGroup;
+			children = (
+				1B6A8E682B9ED98600EFBE5F /* PopularList.swift */,
+				1B6A8E6A2B9EDA8E00EFBE5F /* PopularCarouselView.swift */,
+			);
+			path = PopularList;
+			sourceTree = "<group>";
+		};
 		1B9088222B523487001C61F5 /* Theming */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +356,7 @@
 				1B90882B2B526095001C61F5 /* HomeScreen.swift */,
 				1B90882D2B52613E001C61F5 /* PagingView.swift */,
 				1B9088312B5291FC001C61F5 /* MovieCarouselView.swift */,
+				1B6A8E6E2B9EEA4300EFBE5F /* PopularView.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -524,6 +541,7 @@
 			mainGroup = 1B3FC53F2B4D221E00170398;
 			packageReferences = (
 				1B4E9D682B4F89ED00F9E77B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				1B6A8E662B9ED59400EFBE5F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 1B3FC5492B4D221E00170398 /* Products */;
 			projectDirPath = "";
@@ -579,6 +597,7 @@
 				1B9088302B528708001C61F5 /* ButtonStyle.swift in Sources */,
 				69A56AF72B6D429000F0A020 /* PopularListView.swift in Sources */,
 				69A56AF32B6D386800F0A020 /* PopularListPresenter.swift in Sources */,
+				1B6A8E6B2B9EDA8E00EFBE5F /* PopularCarouselView.swift in Sources */,
 				1B9088242B523493001C61F5 /* DefaultTheme.swift in Sources */,
 				1B4E9D542B4E33BD00F9E77B /* NetworkManager.swift in Sources */,
 				69A56AF52B6D3F6000F0A020 /* PopularListViewModel.swift in Sources */,
@@ -588,9 +607,11 @@
 				1B3FC54E2B4D221E00170398 /* ContentView.swift in Sources */,
 				1B4E9D6E2B4FC43100F9E77B /* SplashView.swift in Sources */,
 				69A56AEF2B6D36D800F0A020 /* PopularListRepository.swift in Sources */,
+				1B6A8E692B9ED98600EFBE5F /* PopularList.swift in Sources */,
 				69A56AE92B6D360B00F0A020 /* PopularListAssembly.swift in Sources */,
 				69A56AE32B6D205B00F0A020 /* ApiService.swift in Sources */,
 				1B4E9D5D2B4E62B800F9E77B /* MovieListModel.swift in Sources */,
+				1B6A8E6F2B9EEA4300EFBE5F /* PopularView.swift in Sources */,
 				1B90882A2B525BDC001C61F5 /* HomeBannerModel.swift in Sources */,
 				1B4E9D812B4FEDA300F9E77B /* TabView.swift in Sources */,
 				69A56AF12B6D379700F0A020 /* PopularListInteractor.swift in Sources */,
@@ -938,6 +959,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.2.6;
+			};
+		};
+		1B6A8E662B9ED59400EFBE5F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

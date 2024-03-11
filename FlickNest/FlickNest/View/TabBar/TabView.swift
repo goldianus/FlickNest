@@ -21,7 +21,7 @@ struct TabViewController: View {
           Label("Home", systemImage: "house.circle.fill")
         }
       
-      NotesView()
+      PopularView()
         .tabItem {
           Label("Notification", systemImage: "bell.circle.fill")
         }

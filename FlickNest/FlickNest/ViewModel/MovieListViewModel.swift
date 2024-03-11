@@ -50,6 +50,25 @@ class MovieListViewModel : ObservableObject {
       .store(in: &cancellables)
   }
   
+  func getPopularList() {
+    movieListDataProvider.getPopularList(pageCount)
+    movieListDataProvider.arrMovieListData
+      .sink(receiveCompletion: { completion in
+        switch completion {
+        case .finished:
+          break
+        case .failure(let err):
+          print(err.localizedDescription)
+          self.isLoading = false
+        }
+      }, receiveValue: { movieList in
+        self.totalPages = movieList.totalPages
+        self.pageCount += 1
+        self.isLoading = false
+      })
+      .store(in: &cancellables)
+  }
+  
   func getResetPageNTotalCount() {
     self.pageCount = 1
     self.totalPages = 0

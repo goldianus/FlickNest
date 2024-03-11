@@ -31,5 +31,21 @@ class MovieListDataProvider {
         self.arrMovieListData.send(movieList)
       }).store(in: &self.subscriptions)
   }
+  
+  func getPopularList(_ pageCount: Int) {
+    let url = NetworkURL.getPopularList(apiKey: apiKey, pageCount: pageCount).url
+    
+    let model = NetworkModel(url: url, method: .get)
+    networkManager.callAPI(with: model)
+      .sink(receiveCompletion: { completion in
+        switch completion {
+        case .finished:
+          break
+        case .failure(let error):
+          print(error)
+        }
+      }, receiveValue: { movieList in
+        self.arrMovieListData.send(movieList)
+      }).store(in: &self.subscriptions)
+  }
 }
-
