@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MovieCard: View {
-  let movie = imageBanner
+//  let movie = imageBanner
   var body: some View {
     ZStack {
       Image("img-Graphic-Art")

@@ -147,6 +147,7 @@
 		1B3FC54A2B4D221E00170398 /* FlickNest */ = {
 			isa = PBXGroup;
 			children = (
+				1BFD51D72BFEDF5E004DDF9E /* Clean Architectur */,
 				1B9088222B523487001C61F5 /* Theming */,
 				1B4E9D762B4FCD0E00F9E77B /* Utils */,
 				1B4E9D702B4FCB0600F9E77B /* font */,
@@ -318,6 +319,7 @@
 		1B9088262B52380B001C61F5 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1B957B812BDF51E40095A149 /* Features */,
 				1B9088352B52A25B001C61F5 /* CellView */,
 				1B9088272B523828001C61F5 /* MainBanner.swift */,
 				1B90882B2B526095001C61F5 /* HomeScreen.swift */,
@@ -333,6 +335,52 @@
 				1B9088332B529290001C61F5 /* MovieCard.swift */,
 			);
 			path = CellView;
+			sourceTree = "<group>";
+		};
+		1B957B812BDF51E40095A149 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1B957B842BDF52450095A149 /* ComingSoonMovie */,
+				1B957B832BDF521F0095A149 /* NowPlayingMovie */,
+				1B957B822BDF51F80095A149 /* PopularMovie */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1B957B822BDF51F80095A149 /* PopularMovie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PopularMovie;
+			sourceTree = "<group>";
+		};
+		1B957B832BDF521F0095A149 /* NowPlayingMovie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NowPlayingMovie;
+			sourceTree = "<group>";
+		};
+		1B957B842BDF52450095A149 /* ComingSoonMovie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ComingSoonMovie;
+			sourceTree = "<group>";
+		};
+		1BFD51D62BFED897004DDF9E /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		1BFD51D72BFEDF5E004DDF9E /* Clean Architectur */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD51D62BFED897004DDF9E /* Aplication */,
+			);
+			path = "Clean Architectur";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,7 +8,7 @@
 import Foundation
 
 
-let apiKey: String = "ad48d4f1d762c9dd901b53cef31dd8bb"
+let apiKey: String = " " //input your api key
 let imagePath: String = "https://image.tmdb.org/t/p/original"
 
 //MovieList

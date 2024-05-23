@@ -16,7 +16,7 @@ class MovieListDataProvider {
   var arrMovieListData = PassthroughSubject<MovieListModel, Never>()
   
   func getMovieList(_ pageCount: Int) {
-    let url = NetworkURL.getMovieList(apiKey: apiKey, pageCount: pageCount).url
+    let url = NetworkURL.getNowPlayingList(apiKey: apiKey, pageCount: pageCount).url
     let model = NetworkModel(url: url, method: .get)
     networkManager.callAPI(with: model)
       .sink(receiveCompletion: { completion in

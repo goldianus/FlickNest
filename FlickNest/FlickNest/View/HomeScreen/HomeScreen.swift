@@ -19,11 +19,20 @@ struct HomeScreen: View {
           }
           
           VStack(spacing: 1.0) {
-            MovieCarouselView(title: "Popular Movies", btnSeeAll: "See All")
+            MovieCarouselView(
+              title: "Popular Movies",
+              btnSeeAll: "See All"
+            )
               .padding(.top, 20)
             VStack {
-              MovieCarouselView(title: "Now Playing", btnSeeAll: "See All")
-              MovieCarouselView(title: "Coming Soon", btnSeeAll: "See All")
+              MovieCarouselView(
+                title: "Now Playing",
+                btnSeeAll: "See All"
+              )
+              MovieCarouselView(
+                title: "Coming Soon",
+                btnSeeAll: "See All"
+              )
             }
             .padding(.top, -10)
           }
