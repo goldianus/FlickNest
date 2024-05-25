@@ -1,0 +1,5 @@
+xcuserdata
+xcuserdata/*
+*.xcuserstate
+*.xcuserstate
+FlickNest/FlickNest.xcodeproj/project.xcworkspace/xcuserdata/goldianus.xcuserdatad/UserInterfaceState.xcuserstate
