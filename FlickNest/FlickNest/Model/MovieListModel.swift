@@ -15,7 +15,9 @@ struct MovieListModel: Codable {
   var totalPages, totalResults: Int
   
   enum CodingKeys: String, CodingKey {
-    case dates, page, results
+    case dates
+    case page
+    case results
     case totalPages = "total_pages"
     case totalResults = "total_results"
   }
@@ -23,7 +25,8 @@ struct MovieListModel: Codable {
 
 // MARK: - Dates
 struct Dates: Codable {
-  var maximum, minimum: String
+  var maximum: String
+  var minimum: String
 }
 
 // MARK: - Result
@@ -32,9 +35,13 @@ struct ResultDataProvider: Codable {
   var backdropPath: String
   var genreIDS: [Int]
   var id: Int
-  var originalLanguage, originalTitle, overview: String
+  var originalLanguage: String
+  var originalTitle: String
+  var overview: String
   var popularity: Double
-  var posterPath, releaseDate, title: String
+  var posterPath: String
+  var releaseDate: String
+  var title: String
   var video: Bool
   var voteAverage: Double
   var voteCount: Int
@@ -49,7 +56,8 @@ struct ResultDataProvider: Codable {
     case overview, popularity
     case posterPath = "poster_path"
     case releaseDate = "release_date"
-    case title, video
+    case title
+    case video
     case voteAverage = "vote_average"
     case voteCount = "vote_count"
   }

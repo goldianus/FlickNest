@@ -32,5 +32,22 @@ struct PopularCarouselView: View {
 }
 
 #Preview {
-  PopularCarouselView(popularData: ResultDataProvider(adult: true, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "", originalTitle: "", overview: "", popularity: 2, posterPath: "StringConstants.placeholderImageFilm", releaseDate: "", title: "", video: true, voteAverage: 1, voteCount: 1))
+  PopularCarouselView(
+    popularData: ResultDataProvider(
+      adult: true,
+      backdropPath: "",
+      genreIDS: [1],
+      id: 1,
+      originalLanguage: "",
+      originalTitle: "",
+      overview: "",
+      popularity: 2,
+      posterPath: "StringConstants.placeholderImageFilm",
+      releaseDate: "",
+      title: "",
+      video: true,
+      voteAverage: 1,
+      voteCount: 1
+    )
+  )
 }
