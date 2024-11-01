@@ -27,10 +27,6 @@ class MovieListViewModel : ObservableObject {
   
   //MARK: - Load NowPlaying
   func getSortedNowPlayingMovies(_ showLoader: Bool) {
-    if showLoader {
-      self.isLoading = true
-    }
-    
     movieListDataProvider.getNowPlayingMovies(pageCount)
     movieListDataProvider.nowPlayingMoviesData
       .sink(receiveCompletion: { completion in

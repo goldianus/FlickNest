@@ -1,5 +1,5 @@
 //
-//  MovieListModel.swift
+//  NowPlayingMoviesModel.swift
 //  FlickNest
 //
 //  Created by Goldianus Solangius on 10/01/24.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - MovieListModel
-struct MovieListModel: Codable {
+// MARK: - NowPlayingMoviesModel
+struct NowPlayingMoviesModel: Codable {
   var dates: Dates
   var page: Int
   var results: [Result]

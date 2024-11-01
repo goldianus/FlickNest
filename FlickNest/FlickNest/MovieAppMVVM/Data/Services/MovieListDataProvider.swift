@@ -9,11 +9,10 @@ import Foundation
 import Combine
 
 // MARK: - MovieListDataProvider
-
 class MovieListDataProvider {
   private var subscriptions = Set<AnyCancellable>()
   private let networkManager = NetworkManager()
-  var nowPlayingMoviesData = PassthroughSubject<MovieListModel, Never>()
+  var nowPlayingMoviesData = PassthroughSubject<NowPlayingMoviesModel, Never>()
   
   func getNowPlayingMovies(_ pageCount: Int) {
     let url = NetworkURL.getNowPlayingMoviesList(apiKey: apiKey, pageCount: pageCount).url
