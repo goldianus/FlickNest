@@ -9,7 +9,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct MovieListCell: View {
-  var moviesData: ResultDataProvider
+  var moviesData: Result
   var body: some View {
     HStack(alignment: .center) {
       HStack(spacing: 10) {
@@ -59,7 +59,7 @@ struct MovieListCell: View {
 }
 
 //#Preview {
-//  MovieListCell(moviesData: <#ResultDataProvider#>)
+//  MovieListCell(moviesData: <#Result#>)
 //}
 
 

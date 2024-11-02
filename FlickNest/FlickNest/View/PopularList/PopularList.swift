@@ -19,20 +19,20 @@ struct PopularList: View {
     NavigationStack{
       ScrollView(.horizontal, showsIndicators: false) {
         HStack(alignment: .top, spacing: 4) {
-          ForEach(viewModel.arrMovieList, id: \.self.id) { movies in
+          ForEach(viewModel.nowPlayingMovies, id: \.self.id) { movies in
             PopularCarouselView(popularData: movies)
           }
         }
         .padding(.leading, 16)
       }
-      .refreshable{
+      .refreshable {
         viewModel.getResetPageNTotalCount()
-        viewModel.getMovieList(true)
+        viewModel.getSortedNowPlayingMovies(true)
       }
+      .background(.clear)
       .onAppear(perform: {
-        viewModel.getMovieList(true)
+        viewModel.getSortedNowPlayingMovies(true)
       })
-      .navigationTitle("Popular Movie")
     }
     .overlay{
       LoadingView(showProgress: $viewModel.isLoading)

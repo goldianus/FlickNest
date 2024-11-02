@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PopularCarouselView: View {
-  var popularData: ResultDataProvider
+  var popularData: Result
   
   var body: some View {
     VStack(alignment: .center) {
@@ -33,7 +33,7 @@ struct PopularCarouselView: View {
 
 #Preview {
   PopularCarouselView(
-    popularData: ResultDataProvider(
+    popularData: Result(
       adult: true,
       backdropPath: "",
       genreIDS: [1],

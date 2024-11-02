@@ -13,7 +13,7 @@ struct PopularView: View {
   
   var body: some View {
     ZStack {
-      Color.white
+      Color.red
       if showMainView {
         let dataProvider = MovieListDataProvider()
         let viewModel = MovieListViewModel(dataProvider: dataProvider)
@@ -31,6 +31,7 @@ struct PopularView: View {
             showMainView = true
           }
         }
+        .background(.clear)
     }
     .edgesIgnoringSafeArea(.all)
   }

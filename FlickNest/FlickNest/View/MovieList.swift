@@ -21,16 +21,16 @@ struct MovieList: View {
     NavigationStack{
       ScrollView(.vertical, showsIndicators: false) {
         LazyVGrid(columns: gridVLayout) {
-          ForEach(viewModel.arrMovieList, id: \.id) { movies in
+          ForEach(viewModel.nowPlayingMovies, id: \.id) { movies in
             MovieListCell(moviesData: movies)
-            if movies.id == viewModel.arrMovieList.last?.id {
+            if movies.id == viewModel.nowPlayingMovies.last?.id {
               if viewModel.pageCount <= viewModel.totalPages {
                 ProgressView(label: {
                   Text("Loading")
                 }).progressViewStyle(.circular)
                   .tint(.gray)
                   .onAppear(perform: {
-                    viewModel.getMovieList(false)
+                    viewModel.getSortedNowPlayingMovies(false)
                   })
               }
             }
@@ -40,11 +40,11 @@ struct MovieList: View {
       }
       .refreshable{
         viewModel.getResetPageNTotalCount()
-        viewModel.getMovieList(true)
+        viewModel.getSortedNowPlayingMovies(true)
       }
       .onAppear(perform: {
         
-        viewModel.getMovieList(true)
+        viewModel.getSortedNowPlayingMovies(true)
       })
       .navigationTitle("Movie List")
     }

@@ -9,7 +9,7 @@ import Foundation
 
 
 enum NetworkURL {
-  case getMovieList(apiKey: String, pageCount: Int)
+  case getNowPlayingMoviesList(apiKey: String, pageCount: Int)
   case getMovieDetails(movieId: String, apiKey: String)
   case getMovieSearch(apiKey: String,  query: String)
   case getPopularList(apiKey: String, pageCount: Int)
@@ -18,7 +18,7 @@ enum NetworkURL {
 extension NetworkURL {
   var url: URL? {
     switch self {
-    case .getMovieList(let apiKey, let pageCount):
+    case .getNowPlayingMoviesList(let apiKey, let pageCount):
       let endPointPath = "\(URLEndPoint.NowPlaying)\(apiKey)&page=\(pageCount)"
       return URL(string: NetworkURL.baseURLString + endPointPath)
     case .getMovieDetails(let movieId, let apiKey):

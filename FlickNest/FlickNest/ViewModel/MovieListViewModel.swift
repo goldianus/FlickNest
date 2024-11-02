@@ -8,13 +8,10 @@
 import Foundation
 import Combine
 
-
-//MARK: - ViewModel for MovieList
 class MovieListViewModel : ObservableObject {
   //MARK: - Properties
-  
-  @Published var arrMovieList: [ResultDataProvider] = []
-  @Published var popularMovies: [ResultDataProvider] = []
+  @Published var nowPlayingMovies: [Result] = []
+  @Published var popularMovies: [Result] = []
   @Published var isLoading = false
   
   var totalPages = 0
@@ -29,13 +26,13 @@ class MovieListViewModel : ObservableObject {
   // MARK: - Public Methods
   
   //MARK: - Load NowPlaying
-  func getMovieList(_ showLoader: Bool) {
+  func getSortedNowPlayingMovies(_ showLoader: Bool) {
     if showLoader {
       self.isLoading = true
     }
     
-    movieListDataProvider.getMovieList(pageCount)
-    movieListDataProvider.arrMovieListData
+    movieListDataProvider.getNowPlayingMovies(pageCount)
+    movieListDataProvider.nowPlayingMoviesData
       .sink(receiveCompletion: { completion in
         switch completion {
         case .finished:
@@ -45,7 +42,7 @@ class MovieListViewModel : ObservableObject {
           self.isLoading = false
         }
       }, receiveValue: { movieList in
-        self.arrMovieList.append(contentsOf: movieList.results.sorted(by: {$0.voteAverage > $1.voteAverage}))
+        self.nowPlayingMovies.append(contentsOf: movieList.results.sorted(by: {$0.voteAverage > $1.voteAverage}))
         self.totalPages = movieList.totalPages
         self.pageCount += 1
         self.isLoading = false
@@ -56,7 +53,7 @@ class MovieListViewModel : ObservableObject {
   //MARK: - Load Popular
   func getPopularList() {
     movieListDataProvider.getPopularList(pageCount)
-    movieListDataProvider.arrMovieListData
+    movieListDataProvider.nowPlayingMoviesData
       .sink(receiveCompletion: { completion in
         switch completion {
         case .finished:
@@ -77,6 +74,6 @@ class MovieListViewModel : ObservableObject {
   func getResetPageNTotalCount() {
     self.pageCount = 1
     self.totalPages = 0
-    self.arrMovieList.removeAll()
+    self.nowPlayingMovies.removeAll()
   }
 }

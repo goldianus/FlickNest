@@ -13,10 +13,10 @@ import Combine
 class MovieListDataProvider {
   private var subscriptions = Set<AnyCancellable>()
   private let networkManager = NetworkManager()
-  var arrMovieListData = PassthroughSubject<MovieListModel, Never>()
+  var nowPlayingMoviesData = PassthroughSubject<MovieListModel, Never>()
   
-  func getMovieList(_ pageCount: Int) {
-    let url = NetworkURL.getMovieList(apiKey: apiKey, pageCount: pageCount).url
+  func getNowPlayingMovies(_ pageCount: Int) {
+    let url = NetworkURL.getNowPlayingMoviesList(apiKey: apiKey, pageCount: pageCount).url
     let model = NetworkModel(url: url, method: .get)
     networkManager.callAPI(with: model)
       .sink(receiveCompletion: { completion in
@@ -28,7 +28,7 @@ class MovieListDataProvider {
         }
       }, receiveValue: { movieList in
         
-        self.arrMovieListData.send(movieList)
+        self.nowPlayingMoviesData.send(movieList)
       }).store(in: &self.subscriptions)
   }
   
@@ -45,7 +45,7 @@ class MovieListDataProvider {
           print(error)
         }
       }, receiveValue: { movieList in
-        self.arrMovieListData.send(movieList)
+        self.nowPlayingMoviesData.send(movieList)
       }).store(in: &self.subscriptions)
   }
 }

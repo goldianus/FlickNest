@@ -19,6 +19,12 @@ struct HomeScreen: View {
           }
           
           VStack(spacing: 1.0) {
+            PopularView()
+              .frame(width: UIScreen.main.bounds.width, height: 300)
+            
+            PopularView()
+              .frame(width: UIScreen.main.bounds.width, height: 300)
+            
             MovieCarouselView(title: "Popular Movies", btnSeeAll: "See All")
               .padding(.top, 20)
             VStack {
