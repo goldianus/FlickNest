@@ -1,0 +1,3 @@
+.xcuserstate
+.Ds_Store
+FlickNest/FlickNest.xcodeproj/project.xcworkspace/xcuserdata/goldianus.xcuserdatad/UserInterfaceState.xcuserstate
